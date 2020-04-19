@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <a href="/">/zero</a>
+    <a href="/one">/one</a>
+    <a href="/two">/two</a>
+    <a href="/three">/three</a>
+  </ul>
+</body>
+<script src="./router.js"></script>
+<script>
+  const router = new Router();
+  console.log(location.pathname);
+  router.init(location.pathname);
+  router.route('/', () => {
+    document.body.style.backgroundColor = 'white';
+  });
+
+  router.route('/one', () => {
+    document.body.style.backgroundColor = 'blue';
+  });
+
+  router.route('/two', () => {
+    document.body.style.backgroundColor = 'yellow';
+  });
+
+  router.route('/three', () => {
+    document.body.style.backgroundColor = 'purple';
+  });
+
+  let ulEle = document.querySelector('ul');
+  ulEle.addEventListener('click', function(e) {
+    router.go(e.target.pathname);
+    e.preventDefault();
+  })
+</script>
+</html>

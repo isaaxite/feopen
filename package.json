@@ -1,0 +1,33 @@
+{
+  "name": "feopen",
+  "version": "0.0.1",
+  "description": "simple runtime to train fe",
+  "main": "index.js",
+  "scripts": {
+    "test": "promises-aplus-tests static/instances/otherPromiseA+.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/isaaxite/feopen.git"
+  },
+  "keywords": [
+    "fe",
+    "runtime"
+  ],
+  "author": "isaac_宝华",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaaxite/feopen/issues"
+  },
+  "homepage": "https://github.com/isaaxite/feopen#readme",
+  "dependencies": {
+    "immer": "^6.0.3",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "koa2": "^2.0.0-alpha.7",
+    "pm2": "^4.2.3",
+    "promises-aplus-tests": "^2.1.2"
+  }
+}
