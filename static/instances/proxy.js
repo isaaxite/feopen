@@ -101,18 +101,18 @@ const proxyC = new Proxy(originC, {
 proxyC.b.b1 = 2.11;
 proxyC.a = 1.1;
 
-console.log(`测试proxy对基本类型数据的拦截`);
+// console.log(`测试proxy对基本类型数据的拦截`);
 
-let originName = 'isaac';
-let proxyName = new Proxy(originName, {
-  get(target, key, receiver) {
-    console.log(`get: key: ${key}, target: ${target}`);
-    return Reflect.get(target, key, receiver);
-  },
-  set(target, key, value, receiver) {
-    console.log(`set: key: ${key}, value: ${value}`);
-    return Reflect.set(target, key, value, receiver);
-  }
-});
-proxyName;
-proxyName = 'frank';
+// let originName = 'isaac';
+// let proxyName = new Proxy(originName, {
+//   get(target, key, receiver) {
+//     console.log(`get: key: ${key}, target: ${target}`);
+//     return Reflect.get(target, key, receiver);
+//   },
+//   set(target, key, value, receiver) {
+//     console.log(`set: key: ${key}, value: ${value}`);
+//     return Reflect.set(target, key, value, receiver);
+//   }
+// });
+// proxyName;
+// proxyName = 'frank';
