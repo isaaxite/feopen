@@ -27,7 +27,7 @@
     "koa-router": "^8.0.8",
     "koa-static": "^5.0.0",
     "koa2": "^2.0.0-alpha.7",
-    "pm2": "^4.2.3",
+    "pm2": "^5.2.0",
     "promises-aplus-tests": "^2.1.2"
   }
 }
